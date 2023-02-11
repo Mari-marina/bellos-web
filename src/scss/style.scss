@@ -32,4 +32,24 @@
 
 // Подключение стилей отдельных блоков и секций =======================================================================================================================
 @import 'layout/header';
+@import 'layout/menu';
+@import 'layout/main-page/main';
+@import 'layout/main-page/brands.scss';
+@import 'layout/main-page/stock.scss';
+@import 'layout/about/about.scss';
+@import 'layout/mainBrands/mainBrands';
+@import 'layout/cardProduct.scss';
+@import 'layout/main-promotions/main-promotions';
+@import 'layout/main-promotions/promotions-detales';
+@import 'layout/contacts/contacts.scss';
+@import 'layout/catalog/catalog.scss';
+@import 'layout/catalog/sidebar.scss';
+@import 'layout/catalogProduct.scss';
+
+
+
+
+
+
+
 @import 'layout/footer';

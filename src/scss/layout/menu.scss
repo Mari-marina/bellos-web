@@ -1,0 +1,42 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  @media all and (max-width: 960px) {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+  &__item__icon {
+    margin-right: 22px;
+    cursor: pointer;
+  }
+  &__item:not(:last-child) {
+    margin-right: 24px;
+    @media all and (max-width: 1130px) {
+      margin-right: 14px;
+    }
+  }
+  &__item-first:not(:last-child) {
+    margin-right: 47px;
+    font-size: 18px;
+    @media all and (max-width: 1170px) {
+      margin-right: 20px;
+    }
+  }
+  &__item-first {
+    cursor: pointer;
+  }
+  
+  &__item-right {
+    font-size: 14px;
+    margin-right: 30px;
+  }
+  
+ }
+
+ 

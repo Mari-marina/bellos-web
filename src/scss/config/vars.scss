@@ -13,9 +13,12 @@ $footerHeight: 100;
 $mainRadius: rem(10);
 
 $whiteColor: #fff;
-$blackColor: #131313;
-$grayColor: #6f6f6f;
+$blackColor: #000000;
+$grayColorText: #4A4A4A;
+$grayColorBacground: #EBEBEB;
+$grayColorBacgroundMain: linear-gradient(180deg, #CDCDCD 3.2%, #F3F3F3 100%);
 $redColor: #ff4040;
+
 
 $firstAccentColor: $blackColor;
 $secondAccentColor: $redColor;

@@ -1,0 +1,54 @@
+.stock {
+  &__icon {
+    margin: 74px 0 45px;
+  }
+  &__wrap {
+    padding: 50px 20px;
+    background: $whiteColor;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+border-radius: 15px;
+  }
+  &__img{
+    margin-right: 20px;
+  }
+  &__wrapper {
+    overflow-x: scroll;
+    display: flex;
+  }
+  &__block {
+    margin-top: 80px;
+  }
+  &__map {
+    height: 400px;
+    width: 100%;
+  }
+  &__list {
+    background: $grayColorText;
+    display: flex;
+    border-radius: 0 0 15px 15px;  ;
+    -webkit-border-radius: 0 0 15px 15px  ;
+    -moz-border-radius: 0 0 15px 15px  ;
+    -ms-border-radius: 0 0 15px 15px  ;
+    -o-border-radius: 0 0 15px 15px  ;
+    padding: 44px 40px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+  &__item,
+  &__item > a {
+    @include text(26px, 400, 39px, $whiteColor);
+  }
+  &__link {
+    margin-left: 14px;
+  }
+  &__subtitle {
+    font-family: 'Buran USSR';
+    @include text(40px, 400, 46px, $blackColor);
+  }
+  &__block-bottom {
+    margin: 80px 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

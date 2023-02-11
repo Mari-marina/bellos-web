@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
   @@include('html/head.html', {
-    'title': 'Главная'
+    'title': 'Беллос'
   })
   <body>
+    @@include('html/header.html', {})
     <div class="wrapper">
-      @@include('html/header.html', {})
+      @@include('html/main-page/main.html', {})
+      @@include('html/main-page/brands.html', {})
+      @@include('html/main-page/stock.html', {})
+
       <main class="page">
-        <div data-observ></div>
+        <div data-observ>
+        </div>
         
       </main>
+      @@include('html/top-footer.html', {})
       @@include('html/footer.html', {})
     </div>
     @@include('html/script.html', {})

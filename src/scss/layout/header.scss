@@ -1,15 +1,27 @@
 // =====================================================================================================================
 .header {
-  width: 100%;
-  &.sticky {
-    // ..стили для липкого хедера
+  padding: 36px 0 34px;
+  background: $grayColorBacground;
+ &__list {
+  display: flex;
+ }
+ &__wrapper,
+ &__nav {
+  display: flex;
+  align-items: center;
+ }
+ &__logo {
+  margin-right: 80px;
+  @media all and (max-width: 1220px) {
+    margin-right: 50px;
   }
-  // .header__container
-  &__container {
-    height: rem($headerHeight);
-    display: flex;
-    align-items: center;
+  @media all and (max-width: 1100px) {
+    margin-right: 30px;
   }
+ }
+ &__wrapper {
+  justify-content: space-between;
+ }
 }
 // =====================================================================================================================
 

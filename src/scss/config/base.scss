@@ -4,6 +4,26 @@ body {
     touch-action: none;
   }
 }
+li, h1, h2, h3, p, a {
+  font-family: DIN Condensed;
+}
+
+.container{
+  max-width: 1440px;
+  width: 100%;
+  padding: 0px 80px;
+  margin: auto;
+  @media all and (max-width: 980px) {
+    padding: 0px 50px;
+  }
+  @media all and (max-width: 700px) {
+    padding: 0px 40px;
+  }
+  @media all and (max-width: 600px) {
+    padding: 0px 20px;
+  }
+}
+
 // Базовые анимации:
 // @import "keyframes";
 
@@ -85,4 +105,7 @@ body {
   &_start {
     padding-top: rem($headerHeight);
   }
+}
+.wrapper {
+  background: $grayColorBacgroundMain;
 }

@@ -1,0 +1,75 @@
+<section class="catalog">
+  <div class="container">
+    <div class="catalog__wrap__block">
+      <button class="catalog__button">КАТАЛОГ</button>
+      <button class="catalog__button">СОЗДАТЬ ЗАКАЗ</button>
+      <button class="catalog__button">ИСТОРИЯ ЗАКАЗОВ</button>
+      <button class="catalog__button">ЛИЧНЫЕ ДАННЫЕ</button>
+    </div>
+    <div class="catalog__wrapper">
+      <div class="catalog__sidebar sidebar">
+        <div class="sidebar__sum">
+          <h3 class="sidebar__subtitle">Сумма</h3>
+          <div class="sidebar__wrapper">
+            <input class="sidebar__input" type="text">
+            <input class="sidebar__input" type="text">
+          </div>
+          <input type="range">
+        </div>
+          <h3 class="sidebar__subtitle">Тип</h3>
+          <div class="sidebar__block">
+            <label class="sidebar__label">
+              <input class="sidebar__checkbox" type="checkbox">
+              Охлаждающие жидкости
+            </label>
+            <label class="sidebar__label">
+              <input class="sidebar__checkbox" type="checkbox">
+              Тормозные жидкости
+            </label>
+            <label class="sidebar__label">
+              <input class="sidebar__checkbox" type="checkbox">
+              Моторные масла
+            </label>
+            <label class="sidebar__label">
+              <input class="sidebar__checkbox" type="checkbox">
+              Смазки
+            </label>
+            <div class="sidebar__block">
+              <label class="sidebar__label">
+                <input class="sidebar__checkbox" type="checkbox">
+                Охлаждающие жидкости
+              </label>
+            </div>
+          </div>
+          <h3 class="sidebar__subtitle">Бренд</h3>
+          <div class="sidebar__block">
+            <label class="sidebar__label">
+              <input class="sidebar__checkbox" type="checkbox">СВ ХИМ
+            </label>
+            <label class="sidebar__label">
+              <input class="sidebar__checkbox" type="checkbox">Лукойл
+            </label>
+            <label class="sidebar__label">
+              <input class="sidebar__checkbox" type="checkbox">Нордойл
+            </label>
+            <label class="sidebar__label">
+              <input class="sidebar__checkbox" type="checkbox">Газпромнефть
+            </label>
+            <label class="sidebar__label">
+              <input class="sidebar__checkbox" type="checkbox">Обникс
+            </label>
+          </div>
+          <label class="sidebar__label">
+            <input class="sidebar__checkbox sidebar__checkbox-bottom" type="checkbox">Наличие на складе
+          </label>
+      </div>
+      <div class="catalog__block-right">
+        @@include('./../catalogProduct.html', {})
+        @@include('./../catalogProduct.html', {})
+        @@include('./../catalogProduct.html', {})
+        @@include('./../catalogProduct.html', {})
+        @@include('./../catalogProduct.html', {})
+      </div>
+    </div>
+  </div>
+</section>

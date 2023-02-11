@@ -1,0 +1,46 @@
+.sidebar {
+  width: 305px;
+  background: $whiteColor;
+  border: 1px solid #E4E4E4;
+  padding: 0 20px 85px;
+  margin: 20px;
+  height: 100%;
+  &__subtitle {
+    @include text(20px, 400, 24px, $blackColor);
+  }
+  &__label {
+    @include text(18px, 400, 20px, $blackColor);
+    font-family: 'DIN Condensed';
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  &__input {
+    width: 124px;
+    height: 26px;
+    border: 1px solid #9E9E9E;
+border-radius: 3px;
+margin-bottom: 10px;
+padding: 0 20px;
+
+  }
+  &__checkbox {
+    margin-right: 15px;
+    
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__subtitle {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  &__block {
+    display:flex;
+    flex-direction: column;
+  }
+  &__checkbox-bottom {
+    margin-top: 52px;
+  }
+}

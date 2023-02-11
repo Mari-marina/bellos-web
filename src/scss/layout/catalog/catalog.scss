@@ -1,0 +1,38 @@
+.catalog {
+  &__wrap__block {
+    display: flex;
+    margin: 20px 0 40px;
+    max-width: 740px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  &__button {
+    border-radius: 10px 0px;
+    width: 170px;
+    height: 50px;
+    background: $whiteColor;
+    @include text(14px, 400, 22px, $blackColor);
+  }
+  &__button:not(:last-child) {
+    margin-right: 14px;
+  }
+  &__button:hover,
+  &__button:active {
+    background: $blackColor;
+    @include text(14px, 400, 22px, $whiteColor);
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__wrapper {
+    background: $whiteColor;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &__block-right {
+    padding: 20px;
+  }
+  
+}

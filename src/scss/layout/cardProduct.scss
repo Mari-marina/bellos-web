@@ -1,0 +1,44 @@
+.cardProduct {
+  background: $whiteColor;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+&__subtitle {
+  @include text(18px, 700, 18px, #8D8D8D);
+  margin-bottom: 18px
+}
+&__text {
+  @include text(16px, 400, 19px, $blackColor);
+  margin-bottom: 12px;
+  max-width: 220px;
+  width: 100%;
+}
+&__text-bottom {
+  @include text(20px, 400, 20px, $blackColor);
+}
+&__text-wrap{
+  border: 1px solid #ACACAC;
+border-radius: 5px;
+padding: 7px 33px 7px 9px;
+width: max-content;
+}
+&__wrapper {
+  padding: 20px 28px 25px; 
+}
+&__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+&__text-price {
+  @include text(20px, 700, 20px, $blackColor);
+  position: relative;
+}
+&__text-price::after {
+  position: absolute;
+  content: "РУБ";
+  top: 0;
+  right: -28px;
+  @include text(20px, 700, 20px, $blackColor);
+}
+}

@@ -1,0 +1,23 @@
+.about {
+  &__img{
+    padding: 18px 0 34px;
+  }
+  &__wrap {
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+  }
+  &__logo {
+    margin-bottom: 50px;
+  }
+  &__text {
+    @include text(20px, 400, 36px, $blackColor);
+  }
+  &__slider {
+    display: flex;
+    margin: 40px 0;
+  }
+  &__text:last-child {
+    margin-bottom: 86px;
+  }
+}

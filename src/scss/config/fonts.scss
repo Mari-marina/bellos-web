@@ -1,14 +1,27 @@
+// @font-face {
+//   font-family: Inter;
+//   font-display: swap;
+//   src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
+//   font-weight: 700;
+//   font-style: normal;
+// }
+
+
 @font-face {
-  font-family: Inter;
-  font-display: swap;
-  src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
-  font-weight: 700;
+  font-family: 'DIN Condensed';
+  src: local('DIN Condensed Regular'), local('DIN-Condensed-Regular'),
+      url('../fonts/DINCondensed-Regular.woff2') format('woff2'),
+      url('../fonts/DINCondensed-Regular.woff') format('woff'),
+      url('../fonts/DINCondensed-Regular.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: Inter;
-  font-display: swap;
-  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+  font-family: 'Buran USSR';
+  src: local('Buran USSR'), local('Buran-USSR'),
+      url('../fonts/Buran-USSR.woff2') format('woff2'),
+      url('../fonts/Buran-USSR.woff') format('woff'),
+      url('../fonts/Buran-USSR.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }

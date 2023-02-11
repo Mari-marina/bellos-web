@@ -1,0 +1,43 @@
+.mainBrands {
+  &__img {
+    padding: 13px 0 50px;
+  }
+  &__wrap__img {
+     width: 400px;
+     height: 128px;
+     background: $whiteColor;
+     border-radius: 15px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__wrap__img-second {
+    margin: 0 40px;
+  }
+  &__title {
+    @include text(50px, 400, 57px, $blackColor);
+    font-family: Buran USSR;
+    margin-bottom: 80px
+  }
+  &__text {
+    @include text(20px, 400, 35px, $blackColor);
+    
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+  }
+  &__wrap-left {
+    margin-right: 56px;
+  }
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0;
+  }
+}
