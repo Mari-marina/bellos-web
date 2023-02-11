@@ -44,11 +44,29 @@ border-radius: 15px;
   &__subtitle {
     font-family: 'Buran USSR';
     @include text(40px, 400, 46px, $blackColor);
+    @media all and (max-width: 1100px) {
+     margin-bottom: 30px;
+    }
+    @media all and (max-width: 740px) {
+      @include text(24px, 400, 21px, $blackColor);
+     }
+     @media all and (max-width: 500px) {
+      @include text(18px, 400, 21px, $blackColor);
+     }
+    
   }
   &__block-bottom {
     margin: 80px 0 200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media all and (max-width: 1110px) {
+      flex-direction: column;
+      margin: 60px 0 150px;
+    }
+    @media all and (max-width: 810px) {
+      flex-direction: column;
+      margin: 43px 0 90px;
+    }
   }
 }
