@@ -1,0 +1,19 @@
+.politics {
+  &__img {
+    margin: 18px 0 44px;
+  }
+  &__wrap {
+    background: $whiteColor;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 80px;
+  }
+  &__text {
+    @include text(20px, 400, 24px, $blackColor);
+  }
+  &__title {
+    @include text(40px, 400, 46px, $blackColor);
+    font-family: 'Buran USSR';
+    margin-bottom: 40px;
+  }
+}
