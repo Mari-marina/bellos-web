@@ -144,3 +144,29 @@ export {
   menuOpen,
   menuClose,
 }
+
+const button = document.querySelector(".burger");
+let menu = document.querySelector(".nav");
+let buttonMenu = document.querySelector(".burger__btn");
+
+
+button.addEventListener("click", function () {
+  menu.classList.toggle("active");
+});
+
+buttonMenu.addEventListener("click", function () {
+  buttonMenu.classList.toggle("close");
+});
+
+let anchors = document.querySelectorAll('a[href*="#"]');
+// let anchors = document.querySelectorAll(".go_top");
+for (let anchor of anchors) {
+  anchor.addEventListener("click", function (event) {
+    event.preventDefault();
+    let blockID = anchor.getAttribute("href");
+    document.querySelector(blockID).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+}

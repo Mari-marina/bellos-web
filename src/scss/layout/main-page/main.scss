@@ -1,5 +1,11 @@
 .main {
   // background: $grayColorBacgroundMain;
+  @media all and (max-width: 950px) {
+    margin-top: 116px;
+  }
+  @media all and (max-width: 500px) {
+    margin-top: 80px;
+  }
   &__bacground {
     background-image: url(./../../images/main.png);
     max-width: 100%;

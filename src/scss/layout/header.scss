@@ -2,6 +2,15 @@
 .header {
   padding: 36px 0 34px;
   background: $grayColorBacground;
+  @media all and (max-width: 500px) {
+    padding: 14px 0 14px;
+    height: 80px;
+  }
+  @media all and (max-width: 960px) {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
  &__list {
   display: flex;
  }
@@ -21,6 +30,7 @@
  }
  &__wrapper {
   justify-content: space-between;
+  
  }
 }
 // =====================================================================================================================
@@ -72,3 +82,15 @@
   }
 }
 */
+.burger__btn {
+  background: url(./../../images/icons/burger-menu.svg);
+  width: 46px;
+  height: 46px;
+  &.close {
+    background: url(./../../images/icons/close.svg);
+    width: 46px;
+    height: 46px;
+  }
+  
+}
+
