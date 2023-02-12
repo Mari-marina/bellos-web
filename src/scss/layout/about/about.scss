@@ -9,6 +9,20 @@
   }
   &__logo {
     margin-bottom: 50px;
+    @media all and (max-width: 500px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__slider__wrap {
+    @media all and (max-width: 500px) {
+      height: 230px;
+      object-fit: contain;
+    }
+  }
+  &__image {
+    @media all and (max-width: 500px) {
+      height: 100%;
+    }
   }
   &__text {
     @include text(20px, 400, 36px, $blackColor);
@@ -16,8 +30,21 @@
   &__slider {
     display: flex;
     margin: 40px 0;
+    @media all and (max-width: 500px) {
+      margin: 20px 0 28px;
+      height: 230px;
+    }
   }
   &__text:last-child {
     margin-bottom: 86px;
+    @media all and (max-width: 500px) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.text {
+  @media all and (max-width: 500px) {
+    @include text(14px, 400, 17px, $grayColorText);
   }
 }

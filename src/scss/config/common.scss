@@ -9,3 +9,9 @@
     display: block;
   }
 }
+
+.text {
+  @media all and (max-width: 500px) {
+    @include text(14px, 400, 17px, $grayColorText);
+  }
+}
