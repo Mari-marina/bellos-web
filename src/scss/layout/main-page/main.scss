@@ -6,10 +6,21 @@
     height: 400px;
     display: grid;
     align-items: end;
+    background-repeat: no-repeat;
+    @media all and (max-width: 500px) {
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 200px;
+      background-position-x: -65px;
+    }
   }
+  
   &__title {
     @include text(40px, 400, 46px, $whiteColor);
-    font-family: Buran USSR
+    font-family: Buran USSR;
+    @media all and (max-width: 500px) {
+      @include text(24px, 400, 27px, $whiteColor);
+    }
   }
   &__wrap {
     background: $whiteColor;
@@ -40,6 +51,9 @@
     justify-content: space-between;
     padding: 40px 58px 58px 36px;
     align-items: center;
+    @media all and (max-width: 500px) {
+      padding: 40px 16px 16px 16px;
+    }
   }
   &__cont {
     max-width: 1440px;
@@ -50,6 +64,14 @@
       padding: 0px;
     }
     
+  }
+  &__block {
+    display: none;
+    @media all and (max-width: 940px)  {
+      display: flex;
+      flex-wrap: wrap;
+
+    }
   }
 }
 
