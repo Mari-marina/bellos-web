@@ -6,7 +6,10 @@
 border-radius: 20px;
 &__subtitle {
   @include text(18px, 700, 18px, #8D8D8D);
-  margin-bottom: 18px
+  margin-bottom: 18px;
+  @media all and (max-width: 800px) {
+    margin-bottom: 10px;
+  }
 }
 &__text {
   @include text(16px, 400, 19px, $blackColor);
@@ -25,6 +28,9 @@ width: max-content;
 }
 &__wrapper {
   padding: 20px 28px 25px; 
+  @media all and (max-width: 800px) {
+    padding: 16px 16px 18px; 
+  }
 }
 &__wrap {
   display: flex;

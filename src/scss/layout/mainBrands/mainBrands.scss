@@ -1,4 +1,10 @@
 .mainBrands {
+  @media all and (max-width: 950px) {
+    margin-top: 116px;
+  }
+  @media all and (max-width: 500px) {
+    margin-top: 80px;
+  }
   &__img {
     padding: 13px 0 50px;
   }
@@ -14,30 +20,93 @@
   &__wrapper {
     display: flex;
   }
-  &__wrap__img-second {
-    margin: 0 40px;
-  }
-  &__title {
+  &__title-top {
+    display: none;
     @include text(50px, 400, 57px, $blackColor);
     font-family: Buran USSR;
-    margin-bottom: 80px
+    margin-bottom: 20px;
+    @media all and (max-width: 1300px)  {
+      display: block;
+      margin-top: 40px;
+    }
+  }
+  &__wrap__img-second {
+    margin: 0 40px;
+    @media all and (max-width: 520px) {
+      margin: 0 20px;
+    }
+    @media all and (max-width: 440px) {
+      margin: 0 5px;
+    }
+  }
+  &__title-bottom {
+    @include text(50px, 400, 57px, $blackColor);
+    font-family: Buran USSR;
+    margin-bottom: 80px;
+    @media all and (max-width: 1300px)  {
+      display: none;
+    }
   }
   &__text {
     @include text(20px, 400, 35px, $blackColor);
+    @media all and (max-width: 1300px)  {
+      margin-top: 40px;
+    }
+    @media all and (max-width: 700px)  {
+      margin-top: 20px;
+    }
+    @media all and (max-width: 500px) {
+      @include text(14px, 400, 21px, $blackColor);
+      text-align: center;
+    }
     
+  }
+  &__slider__img {
+    @media all and (max-width: 740px)  {
+      max-width: 660px;
+      width: 100%;
+    }
+      
   }
   &__wrap {
     display: flex;
     justify-content: space-between;
     margin-top: 130px;
+    @media all and (max-width: 1300px) {
+      flex-direction: column-reverse;
+      margin-top: 0px;
+    }
   }
   &__wrap-left {
     margin-right: 56px;
+    @media all and (max-width: 1300px) {
+      margin-right: 0;
+    }
   }
   &__cards {
     display: flex;
     justify-content: space-between;
+    
     align-items: center;
     margin: 80px 0;
+   overflow-x: scroll;
+   @media all and (max-width: 800px) {
+    margin: 40px 0;
+   }
+    
+  }
+  &__cards > section {
+    @media all and (max-width: 1388px) {
+      margin: 0 12px;
+    }
+  }
+ 
+  &__images {
+    @media all and (max-width: 920px)  {
+      width: 150px;
+    }
+    @media all and (max-width: 720px)  {
+      width: 100px;
+    }
   }
 }

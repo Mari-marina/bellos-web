@@ -1,4 +1,10 @@
 .promotions {
+  @media all and (max-width: 950px) {
+    margin-top: 116px;
+  }
+  @media all and (max-width: 500px) {
+    margin-top: 80px;
+  }
   &__img {
     margin: 18px 0 35px;
   }

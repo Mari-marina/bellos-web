@@ -1,4 +1,10 @@
 .stock {
+  @media all and (max-width: 950px) {
+    margin-top: 116px;
+  }
+  @media all and (max-width: 500px) {
+    margin-top: 80px;
+  }
   &__icon {
     margin: 74px 0 45px;
   }
