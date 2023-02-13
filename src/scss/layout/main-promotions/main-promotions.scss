@@ -11,6 +11,16 @@
   &__wrap {
     max-width: 400px;
     width: 100%;
+    @media all and (max-width: 1400px) {
+      margin: 14px;
+      max-width: 345px;
+    }
+    @media all and (max-width: 830px) {
+      max-width: 600px;
+    }
+    @media all and (max-width: 430px) {
+      margin: 40px 0;
+    }
   }
   &__image {
     object-fit: cover;
@@ -19,6 +29,9 @@
   &__text {
     @include text(20px, 400, 35.5px, $blackColor);
     padding-bottom: 35px;
+    @media all and (max-width: 500px) {
+      @include text(14px, 400, 17px, $grayColorText);
+    }
   }
   
   &__block {
@@ -27,12 +40,18 @@ border-radius: 0px 0px 10px 10px;
 padding: 27px 20px 20px;
 display: flex;
     flex-direction: column;
+    @media all and (max-width: 450px) {
+      padding: 27px 14px 12px 20px;
+    }
   }
   &__link {
     @include text(20px, 400, 35.5px, $blackColor);
     font-family: 'Buran USSR';
     text-align: right;
     margin-top: 36px;
+    @media all and (max-width: 500px) {
+      margin-top: 14px;
+    }
   }
   &__clip {
     // white-space: nowrap; 
@@ -53,5 +72,9 @@ display: flex;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media all and (max-width: 1400px) {
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
