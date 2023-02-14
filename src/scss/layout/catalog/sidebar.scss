@@ -5,6 +5,9 @@
   padding: 0 20px 85px;
   margin: 20px;
   height: 100%;
+  @media all and (max-width: 1154px) {
+    display: none;
+  }
   &__subtitle {
     @include text(20px, 400, 24px, $blackColor);
   }

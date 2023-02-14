@@ -30,9 +30,15 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+    @media all and (max-width: 450px) {
+      background: inherit;
+    }
   }
   &__block-right {
     padding: 20px;
+    @media all and (max-width: 450px) {
+      padding: 0px;
+    }
   }
   
 }

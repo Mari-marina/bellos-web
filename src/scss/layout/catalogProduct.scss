@@ -6,16 +6,39 @@
   padding: 30px;
   border: 1px solid #E4E4E4;
   margin-bottom: 20px;
+  @media all and (max-width: 800px) {
+    padding: 22px 15px 11px 16px;
+    margin-bottom: 10px;
+  }
+  @media all and (max-width: 450px) {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
   &__subtitle {
     @include text(16px, 400, 19px, $blackColor);
+    @media all and (max-width: 816px) {
+      @include text(14px, 400, 18px, $blackColor);
+    }
+    @media all and (max-width: 600px) {
+      @include text(10px, 400, 12px, $blackColor);
+    }
   }
   &__subtitle-left {
     @include text(18px, 700, 18px, #8D8D8D);
     margin-right: 30px;
+    @media all and (max-width: 600px) {
+      @include text(12px, 700, 12px, #8D8D8D);
+    }
   }
   &__wrap__subtitle {
     display: flex;
     margin: 0 0 38px;
+    @media all and (max-width: 800px) {
+      margin: 0 0 12px;
+    }
   }
   &__block {
     display: flex;
@@ -24,16 +47,43 @@
     padding-top: 10px;
     border-bottom: 1px solid #E4E4E4;
   }
+  &__block-last {
+    @media all and (max-width: 600px) {
+      display: none;
+    }
+  }
   &__wrap-right {
     margin: 0 14px 0 54px;
+    @media all and (max-width: 800px) {
+      margin: 0 14px 0 24px;
+    }
+    @media all and (max-width: 600px) {
+      margin: 0 14px 0 20px;
+    }
+    @media all and (max-width: 450px) {
+      margin: 0 0px 0 14px;
+    }
   }
   &__text:first-child {
     @include text(18px, 400, 21px, $blackColor);
+    @media all and (max-width: 816px) {
+      @include text(14px, 400, 18px, $blackColor);
+    }
+    @media all and (max-width: 600px) {
+      @include text(10px, 400, 12px, $blackColor);
+    }
   }
   &__text:last-child {
     @include text(16px, 700, 20.5px, $blackColor);
-    font-family: 'Hero'
+    font-family: 'Hero';
+    @media all and (max-width: 816px) {
+      @include text(14px, 400, 18px, $blackColor);
+    }
+    @media all and (max-width: 600px) {
+      @include text(10px, 400, 12px, $blackColor);
+    }
   }
+  
   &__button {
     border-radius: 15px;
     background: $blackColor;
@@ -42,12 +92,47 @@
     padding: 18px 24px;
     max-width: 220px;
     width: 100%;
+    @media all and (max-width: 1336px) {
+      padding: 12px 14px;
+      max-width: 132px;
+      @include text(14px, 400, 17px, $whiteColor);
+      border-radius: 7.5px;
+    }
+    @media all and (max-width: 700px) {
+      padding: 9px 14px;
+      max-width: 105px;
+      @include text(10px, 400, 11px, $whiteColor);
+      border-radius: 7.5px;
+    }
+    
   }
   &__link {
     @include text(20px, 400, 20px, $blackColor);
     border-bottom: 2px solid #E4E4E4;
     padding: 0 10px 6px;
     margin-left: 60px;
+    @media all and (max-width: 1350px) {
+      margin-left: 0px;
+    }
+    @media all and (max-width: 816px) {
+      @include text(14px, 400, 14px, $blackColor);
+    }
+  }
+  &__img {
+    object-fit: cover;
+    @media all and (max-width: 800px) {
+      width: 200px;
+    }
+    @media all and (max-width: 600px) {
+      width: 104px;
+    }
+  }
+  &__wrap-left {
+    @media all and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
   &__wrap-bottom {
     margin-top: 64px;
@@ -56,5 +141,45 @@
     max-width: 608px;
     width: 100%;
     align-items: flex-end;
+    @media all and (max-width: 980px) {
+      margin-top: 26px;
+    }
   }
+  &__text-bottom {
+    @media all and (max-width: 770px) {
+      display: none;
+    }
+  }
+  &__wrapper-bottom {
+    @media all and (max-width: 770px) {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__price-bottom {
+    @media all and (max-width: 770px) {
+      border-radius: 10px;
+    }
+    @media all and (max-width: 450px) {
+      @include text(14px, 700, 14px, $blackColor);
+    }
+  }
+  &__price-bottom::after {
+    @media all and (max-width: 450px) {
+      @include text(14px, 700, 14px, $blackColor);
+      right: -22px;
+      
+    }
+    
+  }
+  &__text-wrap {
+    @media all and (max-width: 450px) {
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+}
+  }
+  
 }
