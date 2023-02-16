@@ -15,3 +15,11 @@
     @include text(14px, 400, 17px, $grayColorText);
   }
 }
+
+details > summary {
+  list-style-type: none;
+}
+
+details[open] img {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg)}

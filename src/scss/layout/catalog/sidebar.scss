@@ -8,6 +8,12 @@
   @media all and (max-width: 1154px) {
     display: none;
   }
+  &__newWrap {
+    display: none;
+    @media all and (max-width: 1154px) {
+      display: block;
+    }
+  }
   &__subtitle {
     @include text(20px, 400, 24px, $blackColor);
   }
@@ -34,6 +40,7 @@ padding: 0 20px;
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    
   }
   &__subtitle {
     margin-bottom: 20px;
@@ -46,4 +53,45 @@ padding: 0 20px;
   &__checkbox-bottom {
     margin-top: 52px;
   }
+  &__details,
+  &__label-new,
+  &__sum-new {
+    max-width: 600px;
+    width: 100%;
+    background: $whiteColor;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: none;
+    @include text(22px, 400, 24px, $blackColor);
+    font-family: 'DIN Condensed';
+    @media all and (max-width: 1154px) {
+      display: block;
+    }
+    @media all and (max-width: 450px) {
+      padding: 10px;
+      margin-bottom: 10px;
+      
+    }
+  }
+  &__label-new {
+    display: none;
+    @media all and (max-width: 1154px) {
+      display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    }
+    
+  }
+  &__checkbox-new {
+    margin: 0;
+    
+  }
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  
 }

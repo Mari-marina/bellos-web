@@ -33,6 +33,9 @@
     @media all and (max-width: 450px) {
       background: inherit;
     }
+    @media all and (max-width: 1154px) {
+      flex-direction: column;
+    }
   }
   &__block-right {
     padding: 20px;

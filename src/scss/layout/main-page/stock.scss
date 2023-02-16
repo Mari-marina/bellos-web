@@ -6,7 +6,10 @@
     margin-top: 80px;
   }
   &__icon {
-    margin: 0px 0 45px;
+    margin: 74px 0 45px;
+    @media all and (max-width: 950px)  {
+      margin-top: 0;
+    }
   }
   &__wrap {
     padding: 50px 20px;
