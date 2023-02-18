@@ -1,0 +1,24 @@
+.menu-btn {
+  @media all and (max-width: 950px) {
+    margin-top: 116px;
+  }
+  @media all and (max-width: 500px) {
+    margin-top: 100px;
+  }
+  &__button {
+    @include text(20px, 400, 24px, $blackColor);
+    font-family: 'DIN Condensed';
+    padding: 18px 20px;
+    border-radius: 15px;
+    background: $whiteColor;
+    margin-bottom: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+  }
+  &__wrap {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+}

@@ -1,0 +1,96 @@
+.modal {
+  display: none;
+  position: absolute;
+  background: #14141467;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  z-index: 20;
+    top: 0px;
+  &__wrapper {
+    background: linear-gradient(180deg, #CDCDCD 3.2%, #F3F3F3 100%);
+border: 1px solid #8A8A8A;
+border-radius: 15px;
+max-width: 600px;
+width: 100%;
+padding: 25px 20px;
+@media all and (max-width: 500px) {
+  padding: 15px;
+  margin: 8px;
+}
+
+  }
+  &__wrap__btn {
+    display: flex;
+    justify-content: right;
+  }
+  &__img {
+    margin: 0 auto;
+    @media all and (max-width: 500px) {
+      display: none;
+    }
+  }
+  &__wrap,
+  &__form {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+  }
+  &__form {
+   justify-content: left;
+   max-width: 360px;
+   width: 100%;
+   margin: 0 auto
+  }
+  &__input {
+    border-radius: 10px;
+    max-width: 360px;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    @media all and (max-width: 500px) {
+      margin-bottom: 10px;
+    }
+
+  }
+  &__text {
+    margin-bottom: 4px;
+    @include text(16px, 400, 19px, $blackColor);
+  }
+  &__button {
+    max-width: 360px;
+    width: 100%;
+    border: none;
+    @include text(20px, 400, 24px, $blackColor);
+    color: $whiteColor;
+    padding: 13px;
+    border-radius: 10px;
+    background: $blackColor;
+    font-family: 'DIN Condensed';
+    margin: 20px 0;
+    @media all and (max-width: 500px) {
+      margin: 11px 0;
+    }
+  }
+  &__button-second {
+    background: $whiteColor;
+    color: $blackColor;
+  }
+}
+.close-btn, .close-btn-new{
+  cursor: pointer;
+}
+.modal-second,
+.modal-third {
+  display: none;
+  position: absolute;
+  background: #14141467;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  z-index: 20;
+    top: 0px;
+}
