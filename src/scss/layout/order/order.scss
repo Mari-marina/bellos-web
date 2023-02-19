@@ -50,4 +50,15 @@ border-radius: 15px;
     cursor: pointer;
     margin-left: 20px;
   }
+  &__wrap-right {
+    max-width: 740px;
+    width: 100%;
+  }
+  &__table {
+    width: 100%;
+  }
+  &__column {
+    border-bottom: 1px solid #D9D9D9;
+    padding: 12px;
+  }
 }
