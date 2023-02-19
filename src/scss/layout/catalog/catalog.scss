@@ -29,7 +29,8 @@
     margin-right: 14px;
   }
   &__button:hover,
-  &__button:active {
+  &__button:active,
+  &__button:focus {
     background: $blackColor;
     @include text(14px, 400, 22px, $whiteColor);
   }

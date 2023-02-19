@@ -1,0 +1,53 @@
+.order {
+  font-family: 'DIN Condensed';
+  &__subtitle {
+    @include text(14px, 400, 17px, $blackColor);
+    margin-bottom: 20px;
+  }
+  &__blocks {
+    border-radius: 20px;
+    background: $whiteColor;
+    padding: 32px 20px 56px;
+    margin-bottom: 90px;
+  }
+  &__input {
+    max-width: 480px;
+    width: 100%;
+    padding: 18px 20px;
+    @include text(14px, 400, 17px, $blackColor);
+    box-shadow: 0px 0px 4px rgba(77, 77, 77, 0.25);
+border-radius: 15px;
+margin-bottom: 25px;
+  }
+  &__input::placeholder {
+    @include text(14px, 400, 17px, $blackColor);
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__wrap-left {
+    width: 100%;
+    max-width: 480px;
+    
+  }
+  &__details__block {
+    padding: 10px;
+    box-shadow: 0px 0px 4px rgba(77, 77, 77, 0.25);
+border-radius: 15px;
+  }
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+    max-width: 480px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    @include text(18px, 400, 21px, $blackColor);
+  }
+  &__text {
+    margin-bottom: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+}

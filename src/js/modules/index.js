@@ -254,3 +254,4 @@ modalWindowFourth.addEventListener("click", function (event) {
     modalWindowFourth.style.display = "none";
   }
 });
+
