@@ -50,6 +50,8 @@ padding: 25px 20px;
     height: 50px;
     padding: 0 20px;
     margin-bottom: 15px;
+    font-size: 14px;
+    font-family: 'DIN Condensed';
     @media all and (max-width: 500px) {
       margin-bottom: 10px;
     }
@@ -74,17 +76,38 @@ padding: 25px 20px;
       margin: 11px 0;
     }
   }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__button__text {
+    text-align: center;
+    cursor: pointer;
+  }
+  &__title {
+    @include text(36px, 400, 43px, $blackColor);
+    margin: 35px 0 30px;
+  }
   &__button-second {
     background: $whiteColor;
     color: $blackColor;
+    text-align: center;
+    cursor: pointer;
+  }
+  &__subtitle {
+    @include text(24px, 400, 24px, $blackColor);
+    margin-bottom: 86px;
+    text-align: center;
   }
 }
 .close-btn, .close-btn-new{
   cursor: pointer;
 }
 .modal-second,
-.modal-third {
-  display: none;
+.modal-third,
+.modal-fourth {
   position: absolute;
   background: #14141467;
   align-items: center;
@@ -93,4 +116,14 @@ padding: 25px 20px;
   width: 100%;
   z-index: 20;
     top: 0px;
+}
+.modal-second {
+  display: none;
+}
+.modal-third {
+  display: none;
+}
+
+.modal-fourth {
+  display: none;
 }

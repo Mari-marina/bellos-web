@@ -175,12 +175,18 @@ for (let anchor of anchors) {
 let modalButton = document.getElementById("modalBtn");
 let applicationBtn = document.querySelector(".main__wrap");
 let applicationBtnThird = document.getElementById("main__wrapthird");
+let applicationProcessing = document.getElementById("application-processing");
+let applicationProcessing2 = document.getElementById("application-processing2");
+let createAnApplication = document.getElementById("create-an-application");
 let modalWindow = document.querySelector(".modal");
 let modalWindowSecond = document.querySelector(".modal-second");
 let modalWindowThird = document.querySelector(".modal-third");
+let modalWindowFourth = document.querySelector(".modal-fourth");
 let closeBtn = document.querySelector(".close-btn")
 let closeBtnNew = document.querySelector(".close-btn-new")
 let closeBtnThird = document.querySelector(".close-btn-third")
+let closeBtnFourth = document.querySelector(".close-btn-fourth")
+
 
 
 modalButton.addEventListener("click", function () {
@@ -188,6 +194,12 @@ modalButton.addEventListener("click", function () {
 });
 closeBtn.addEventListener("click", function () {
   modalWindow.style.display = "none";
+});
+createAnApplication.addEventListener("click", function () {
+  modalWindow.style.display = "none";
+});
+createAnApplication.addEventListener("click", function () {
+  modalWindowSecond.style.display = "flex";
 });
 applicationBtn.addEventListener("click", function () {
   modalWindowSecond.style.display = "flex";
@@ -219,5 +231,26 @@ closeBtnThird.addEventListener("click", function () {
 modalWindowThird.addEventListener("click", function (event) {
   if (event.target === modalWindowThird) {
     modalWindowThird.style.display = "none";
+  }
+});
+applicationProcessing2.addEventListener("click", function () {
+  modalWindowThird.style.display = "none";
+});
+applicationProcessing2.addEventListener("click", function () {
+  modalWindowFourth.style.display = "flex";
+});
+
+applicationProcessing.addEventListener("click", function () {
+  modalWindowFourth.style.display = "flex";
+});
+applicationProcessing.addEventListener("click", function () {
+  modalWindowSecond.style.display = "none";
+});
+closeBtnFourth.addEventListener("click", function () {
+  modalWindowFourth.style.display = "none";
+});
+modalWindowFourth.addEventListener("click", function (event) {
+  if (event.target === modalWindowFourth) {
+    modalWindowFourth.style.display = "none";
   }
 });
