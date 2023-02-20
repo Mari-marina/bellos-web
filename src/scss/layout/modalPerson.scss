@@ -1,10 +1,10 @@
 .modal {
   display: none;
-  position: absolute;
+  position: fixed;
   background: #14141467;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   z-index: 20;
     top: 0px;
@@ -108,11 +108,11 @@ padding: 25px 20px;
 .modal-second,
 .modal-third,
 .modal-fourth {
-  position: absolute;
+  position: fixed;
   background: #14141467;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   z-index: 20;
     top: 0px;
