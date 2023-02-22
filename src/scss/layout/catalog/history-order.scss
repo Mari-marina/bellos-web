@@ -1,0 +1,40 @@
+.history-order {
+  &__column {
+    @include text(18px, 400, 22px, $blackColor);
+    text-align: center;
+  }
+  &__column__link {
+    @include text(16px, 400, 16px, $blackColor);
+    padding: 0 5px 10px;
+    border-bottom: 1px solid $blackColor;
+  }
+  &__btn {
+    border-radius: 15px;
+    background: $blackColor;
+    padding: 16px 20px;
+    color: $whiteColor;
+    font-family: 'Buran USSR';
+  }
+  &__wrapper {
+    background: $whiteColor;
+    border-radius: 20px;
+    padding: 25px 50px 137px;
+    font-family: 'DIN Condensed';
+  }
+  &__table {
+    width: 100%;
+  }
+  &__column-top {
+    @include text(18px, 400, 22px, #696969);
+  }
+  &__pillar:not(:first-child) {
+    @include text(14px, 400, 14px, $blackColor);
+  }
+  &__pillar:first-child {
+    @include text(12px, 400, 14px, $blackColor);
+    font-family: 'DIN Condensed';
+  }
+  &__tbl {
+    width: 100%;
+  }
+}

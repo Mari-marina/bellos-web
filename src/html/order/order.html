@@ -1,9 +1,16 @@
 <section class="order">
   <div class="container">
+    <ul class="catalog__list-top">
+      <li class="catalog__item-top"><a href="#">Личный кабинет</a></li>
+      <li class="catalog__item-top"><a href="#">Создать заказ</a></li>
+    </ul>
     <div class="order__blocks">
+      
     <div class="order__wrapper">
+      
       <div class="order__wrap order__wrap-left">
         <input class="order__input" type="text" placeholder="ПОИСК">
+        @@include('./../select.html', {})
         <div class="order__details__block">
           <h3 class="order__subtitle">ПОИСК ПО КАТЕГОРИЯМ</h3>
           <details class="order__details" open>
