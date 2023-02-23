@@ -1,0 +1,108 @@
+.data {
+  &__wrapper {
+    display: flex;
+    box-shadow: 0px 0px 4px rgba(77, 77, 77, 0.25);
+border-radius: 20px;
+background: $whiteColor;
+width: 100%;
+padding: 30px 30px 84px;
+justify-content: space-between;
+  }
+  &__button {
+    border-radius: 15px;
+    background: $blackColor;
+    padding: 16px 31px;
+    color: $whiteColor;
+    font-family: 'Buran USSR';
+  }
+  &__block__button {
+    box-shadow: 0px 0px 4px rgba(77, 77, 77, 0.25);
+    font-family: 'DIN Condensed';
+    max-width: 111px;
+    width: 100%;
+    height: 37px;
+    background: transparent;
+  }
+  &__block__button:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__block__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__block__btn__text {
+    margin-bottom: 30px;
+  }
+  &__wrap-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__content:last-child {
+    max-width: 740px; 
+    width: 100%;
+    margin-left: 28px;
+    
+  }
+  &__content:first-child {
+    max-width: 452px; 
+    width: 100%;
+    
+  }
+  &__wrap-right {
+    box-shadow: 0px 0px 4px rgba(77, 77, 77, 0.25);
+    border-radius: 20px;
+  }
+  &__subtitle-small {
+    margin-bottom: 20px;
+    font-family: 'DIN Condensed';
+    @include text(20px, 400, 24px, $blackColor);
+  }
+  &__subtitle {
+    font-family: 'DIN Condensed';
+    @include text(30px, 400, 34px, $blackColor);
+    margin-bottom: 40px;
+  }
+  &__reg {
+    @include text(20px, 400, 24px, $blackColor);
+    display: flex;
+    justify-content: space-between;
+    max-width: 280px;
+    width: 100%;
+    margin-bottom: 22px;
+  }
+  &__block-small,
+  &__block-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__block {
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0px 0px 4px rgba(77, 77, 77, 0.25);
+border-radius: 10px;
+  }
+  &__wrap-bottom {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 0px 4px rgba(77, 77, 77, 0.25);
+border-radius: 10px;
+  }
+  &__block__text {
+    @include text(14px, 400, 17px, $blackColor);
+  }
+  &__block-small:not(:last-child),
+  &__block-bottom:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &__block-bottom {
+    @include text(18px, 400, 22px, $blackColor);
+  }
+  &__subtitle-mini {
+    margin: 20px 0 8px;
+    @include text(14px, 400, 17px, $blackColor);
+    font-family: 'DIN Condensed';
+  }
+
+}
