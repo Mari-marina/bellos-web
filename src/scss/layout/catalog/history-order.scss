@@ -2,11 +2,12 @@
   &__column {
     @include text(18px, 400, 22px, $blackColor);
     text-align: center;
+    cursor: pointer;
   }
   &__column__link {
     @include text(16px, 400, 16px, $blackColor);
     padding: 0 5px 10px;
-    border-bottom: 1px solid $blackColor;
+    // border-bottom: 1px solid $blackColor;
   }
   &__btn {
     border-radius: 15px;
@@ -20,6 +21,7 @@
     border-radius: 20px;
     padding: 25px 50px 137px;
     font-family: 'DIN Condensed';
+    margin-bottom: 450px;
   }
   &__table {
     width: 100%;
@@ -29,12 +31,37 @@
   }
   &__pillar:not(:first-child) {
     @include text(14px, 400, 14px, $blackColor);
+    // text-align: center;
   }
   &__pillar:first-child {
     @include text(12px, 400, 14px, $blackColor);
     font-family: 'DIN Condensed';
   }
+  &__details:not(:last-child) {
+    margin: 20px 0;
+  }
   &__tbl {
     width: 100%;
+    padding: 10px 48px;
+  }
+  &__pillar {
+    margin-bottom: 1px solid #D9D9D9;
+    padding: 23px 0;
+  }
+  &__column-top:first-child {
+    width: 14.5%;
+  }
+  &__column-top:nth-child(2) {
+    width: 10%;
+  }
+  &__column-top:nth-child(3) {
+    width: 20%;
+  }
+  &__column-top:nth-child(4) {
+    width: 10%;
+  }
+  &__text {
+    padding-bottom: 10px 10px 10px;
+    border-bottom: 1px solid $blackColor;
   }
 }
