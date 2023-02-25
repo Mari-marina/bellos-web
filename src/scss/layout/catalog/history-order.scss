@@ -7,7 +7,17 @@
   &__column__link {
     @include text(16px, 400, 16px, $blackColor);
     padding: 0 5px 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    justify-content: center;
+
     // border-bottom: 1px solid $blackColor;
+  }
+  &__text {
+    width: max-content;
+    padding: 0 10px 8px;
+    cursor: pointer;
   }
   &__btn {
     border-radius: 15px;
@@ -22,6 +32,9 @@
     padding: 25px 50px 137px;
     font-family: 'DIN Condensed';
     margin-bottom: 450px;
+    @media all and (max-width: 850px) {
+      display: none;
+    }
   }
   &__table {
     width: 100%;
