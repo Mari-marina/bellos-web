@@ -30,10 +30,18 @@
     padding: 18px 20px;
     @include text(14px, 400, 17px, $blackColor);
     box-shadow: 0px 0px 4px rgba(77, 77, 77, 0.25);
+    border: 1px solid rgba(77, 77, 77, 0.25);
 border-radius: 15px;
 margin-bottom: 25px;
 @media all and (max-width: 1100px) {
   max-width: 740px;
+}
+@media all and (max-width: 500px) {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
   }
   &__input::placeholder {
@@ -113,6 +121,9 @@ margin-left: 6px;
     margin-bottom: 46px;
     @media all and (max-width: 1100px) {
       flex-direction: column;
+    }
+    @media all and (max-width: 500px) {
+      margin-bottom: 0;
     }
   }
   &__table-second {
@@ -218,6 +229,34 @@ padding: 20px;
     @media all and (max-width: 500px) {
       display: block;
     }
+    &__summary__text {
+      @include text(20px, 400, 24px, $blackColor);
+    }
+    &__summary {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      padding: 17px;
+    }
+    &__details {
+      display: none;
+      background: transparent;
+      //height: 44px;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0px 0px 4px rgb(77 77 77 / 25%);
+    border: 1px solid rgba(77, 77, 77, 0.25);
+      border-radius: 10px;
+      @media all and (max-width: 500px) {
+        display: block;
+      }
+      &__block {
+        padding: 10px;
+      }
+
+    }
+    
     &__block-top,
     &__wrapper,
     &__block-color,
@@ -283,6 +322,7 @@ padding: 20px;
       padding: 25px 0;
       border-bottom: 2px solid #00BEA4;
     }
+   
   }
  
 }
