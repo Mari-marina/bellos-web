@@ -4,11 +4,25 @@
     @include text(14px, 400, 17px, $blackColor);
     margin-bottom: 20px;
   }
+  &__wrap-bottom,
+  &__wrap-right,
+  &__wrap-bottom-right {
+    @media all and (max-width: 500px) {
+      display: none;
+    }
+  }
   &__blocks {
     border-radius: 20px;
     background: $whiteColor;
     padding: 32px 20px 56px;
     margin-bottom: 90px;
+    @media all and (max-width: 500px) {
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+}
   }
   &__input {
     max-width: 480px;
@@ -31,6 +45,7 @@ margin-bottom: 25px;
     @media all and (max-width: 1100px) {
       flex-direction: column;
     }
+    
   }
   &__wrap-left {
     width: 100%;
@@ -44,6 +59,9 @@ margin-bottom: 25px;
     padding: 10px;
     box-shadow: 0px 0px 4px rgba(77, 77, 77, 0.25);
 border-radius: 15px;
+@media all and (max-width: 500px) {
+  display: none;
+}
   }
   &__summary {
     display: flex;
@@ -158,6 +176,9 @@ padding: 20px;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 0 0 57px;
+    @media all and (max-width: 660px) {
+      flex-direction: column;
+    }
   }
   &__block-bottom__text {
     display: flex;
@@ -165,9 +186,13 @@ padding: 20px;
     align-items: center;
     max-width: 450px;
   width: 100%;
+  @media all and (max-width: 660px) {
+    margin-bottom: 23px;
+  }
   }
   &__price-subtitle {
     @include text(30px, 400, 36px, $blackColor);
+    
   }
   &__price {
     @include text(40px, 400, 48px, $blackColor);
@@ -187,6 +212,85 @@ padding: 20px;
     @include text(20px, 400, 23px, $whiteColor);
     font-family: 'Buran USSR';
   }
+  &__mobile {
+    display: none;
+    margin-bottom: 30px;
+    @media all and (max-width: 500px) {
+      display: block;
+    }
+    &__block-top,
+    &__wrapper,
+    &__block-color,
+    &__block {
+      display: flex;
+    }
+    &__wrapper {
+      @include text(12px, 400, 14px, $blackColor); 
+      margin: 8px 0 6px;
+    }
+    &__wrapper:first-child {
+      margin-right: 92px;
+    }
+    &__text:first-child {
+      margin-right: 4px;
+    }
+    &__btn {
+      background: transparent;
+      border: 1px solid $blackColor;
+      border-radius: 8px;
+      @include text(12px, 500, 15px, $blackColor);
+      padding: 10px 26px;
+    }
+    &__subtitle {
+      @include text(20px, 400, 24px, $blackColor);
+    }
+    &__minus,
+    &__plus {
+      width: 20px;
+      height: 20px;
+      background: transparent;
+      @include text(20px, 400, 1px, $blackColor);
+      border: 1px solid $blackColor;
+      border-radius: 4px;
+    }
+    &__input {
+      @include text(14px, 600, 17px, $blackColor);
+    }
+    &__text-color:first-child {
+      @include text(12px, 400, 14px, #00BEA4);
+    }
+    &__text-color:last-child {
+      @include text(18px, 400, 22px, #00BEA4);
+    }
+    &__block-color {
+      display: flex;
+      align-items: center;
+      margin-right: 32px;
+    }
+    &__price__wrap {
+      display: flex;
+      justify-content: center;
+      margin-right: 32px;
+    }
+    &__input {
+      width: 26px;
+      padding-left: 5px;
+    }
+    &__block {
+      align-items: center;
+    }
+    &__wrap {
+      padding: 25px 0;
+      border-bottom: 2px solid #00BEA4;
+    }
+  }
  
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ 
