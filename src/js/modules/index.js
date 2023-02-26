@@ -256,3 +256,18 @@ modalWindowFourth.addEventListener("click", function (event) {
 });
 
 
+let modalButtonfifth = document.getElementById("add");
+let modalFifth = document.querySelector(".modal-fifth");
+let modalFifthClose = document.querySelector(".close-btn-fifth");
+
+modalButtonfifth.addEventListener("click", function () {
+  modalFifth.style.display = "flex";
+});
+modalFifthClose.addEventListener("click", function () {
+  modalFifth.style.display = "none";
+});
+modalFifth.addEventListener("click", function (event) {
+  if (event.target === modalFifth) {
+    modalFifth.style.display = "none";
+  }
+});

@@ -31,7 +31,26 @@
     </div>
     <div class="catalogProduct__wrap-bottom">
       <a class="catalogProduct__link" href="./card-details.html">ПОДРОБНЕЕ</a>
-      <button class="catalogProduct__button">Добавить в заказ</button>
+      <button class="catalogProduct__button" id="add">Добавить в заказ</button>
     </div>
   </div>
 </div>
+@@include('html/../modalPerson.html', {})
+
+<script>
+  let modalButtonfifth = document.getElementById("add");
+let modalFifth = document.querySelector(".modal-fifth");
+let modalFifthClose = document.querySelector(".close-btn-fifth");
+
+modalButtonfifth.addEventListener("click", function () {
+  modalFifth.style.display = "flex";
+});
+modalFifthClose.addEventListener("click", function () {
+  modalFifth.style.display = "none";
+});
+modalFifth.addEventListener("click", function (event) {
+  if (event.target === modalFifth) {
+    modalFifth.style.display = "none";
+  }
+});
+</script>
