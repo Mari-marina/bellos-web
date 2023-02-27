@@ -108,7 +108,9 @@ padding: 25px 20px;
 .modal-second,
 .modal-third,
 .modal-fourth,
-.modal-fifth {
+.modal-fifth,
+.modal-six,
+.modal-seven  {
   position: fixed;
   background: #14141467;
   align-items: center;
@@ -127,6 +129,20 @@ padding: 25px 20px;
 
 .modal-fourth {
   display: none;
+}
+.modal-six {
+  display: none;
+}
+.modal-seven {
+  display: none;
+  &__title {
+    background: $whiteColor;
+    border-radius: 10px;
+    padding: 10px 44px;
+  }
+  &__wrap {
+    margin: 80px 0 80px;
+  }
 }
 .modal-fifth {
   display: none;

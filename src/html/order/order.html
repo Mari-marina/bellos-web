@@ -457,7 +457,7 @@
         <h3 class="order__price-subtitle">СУММА ЗАКАЗА</h3>
         <h3 class="order__price">15000 РУБ</h3>
       </div>
-      <div class="order__button">
+      <div class="order__button button__six">
         <p class="order__button__text">заказать</p>
         <img class="order__button__img" src="./../../images/icons/Subtract.svg" alt="">
       </div>
@@ -493,4 +493,37 @@ plus.addEventListener('click', function() {
 let counts = document.querySelectorAll('.counter');
 
 counts.forEach(counterFunction);
+
+
+let modalButtonSix = document.querySelector(".button__six");
+let modalSix = document.querySelector(".modal-six");
+let modalSixClose = document.querySelector(".close-btn-six");
+
+modalButtonSix.addEventListener("click", function () {
+  modalSix.style.display = "flex";
+});
+modalSixClose.addEventListener("click", function () {
+  modalSix.style.display = "none";
+});
+modalSix.addEventListener("click", function (event) {
+  if (event.target === modalSix) {
+    modalSix.style.display = "none";
+  }
+});
+
+let modalButtonSeven = document.querySelector(".adopted");
+let modalSeven = document.querySelector(".modal-seven");
+// let modalSevenClose = document.querySelector(".close-btn-six");
+modalButtonSeven.addEventListener("click", function () {
+  modalSix.style.display = "none";
+});
+modalButtonSeven.addEventListener("click", function () {
+  modalSeven.style.display = "flex";
+});
+
+modalSeven.addEventListener("click", function (event) {
+  if (event.target === modalSeven) {
+    modalSeven.style.display = "none";
+  }
+});
 </script>

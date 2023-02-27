@@ -256,7 +256,7 @@ modalWindowFourth.addEventListener("click", function (event) {
 });
 
 
-let modalButtonfifth = document.getElementById("add");
+let modalButtonfifth = document.querySelector(".add");
 let modalFifth = document.querySelector(".modal-fifth");
 let modalFifthClose = document.querySelector(".close-btn-fifth");
 
@@ -269,5 +269,21 @@ modalFifthClose.addEventListener("click", function () {
 modalFifth.addEventListener("click", function (event) {
   if (event.target === modalFifth) {
     modalFifth.style.display = "none";
+  }
+});
+
+let modalButtonSix = document.querySelector(".button__six");
+let modalSix = document.querySelector(".modal-six");
+let modalSixClose = document.querySelector(".close-btn-six");
+
+modalButtonSix.addEventListener("click", function () {
+  modalSix.style.display = "flex";
+});
+modalSixClose.addEventListener("click", function () {
+  modalSix.style.display = "none";
+});
+modalSix.addEventListener("click", function (event) {
+  if (event.target === modalSix) {
+    modalSix.style.display = "none";
   }
 });
