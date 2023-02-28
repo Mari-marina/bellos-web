@@ -1,0 +1,38 @@
+.h-screen {
+  height: 100px;
+}
+.w-42,
+.catalog__range,
+.text-center {
+  border: 1px solid #9E9E9E;
+border-radius: 3px;
+width: 125px;
+height: 37px;
+@include text(14px, 400, 17px, $blackColor);
+    font-family: 'DIN Condensed';
+
+}
+
+.h-2 {
+  height: 3px;
+  
+}
+.relative {
+  display: flex;
+    flex-direction: column-reverse;
+    
+}
+.mintrigger {
+  margin: 10px;
+}
+.range-wrap {
+  margin-top: 20px;
+}
+
+.abs-ramge {
+  height: 3px;
+}
+.absolute-range {
+  position: absolute;
+    top: 3px;
+}

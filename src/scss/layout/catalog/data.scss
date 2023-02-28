@@ -195,6 +195,7 @@ border-radius: 10px;
    &__color__text-red {
     color: #ED5555;
    }
+   
    &__img__gray {
     background:#BFBFBF;
    }
@@ -242,6 +243,9 @@ border-radius: 10px;
   }
 }
 
-span {
+  span {
   margin-left: 10px;
+  font-family: 'DIN Condensed';
+  font-size: 14px;
 }
+

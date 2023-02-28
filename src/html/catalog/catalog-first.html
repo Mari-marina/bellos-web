@@ -6,11 +6,13 @@
   </ul>
   <div class="sidebar__sum sidebar__sum-new">
     <h3 class="sidebar__subtitle">Сумма</h3>
-    <div class="sidebar__wrapper">
+    <!-- <div class="sidebar__wrapper">
       <input class="sidebar__input" type="text">
       <input class="sidebar__input" type="text">
+    </div> -->
+    <div class="sidebar__range__block">
+      @@include('../range.html', {})
     </div>
-    <input type="range">
   </div>
   <details class="sidebar__details">
     <summary class="sidebar__summary">Тип
@@ -77,11 +79,12 @@
     <div class="catalog__sidebar sidebar">
       <div class="sidebar__sum">
         <h3 class="sidebar__subtitle">Сумма</h3>
-        <div class="sidebar__wrapper">
+        <!-- <div class="sidebar__wrapper">
           <input class="sidebar__input" type="text">
           <input class="sidebar__input" type="text">
         </div>
-        <input type="range">
+        <input type="range"> -->
+        @@include('../range.html', {})
       </div>
         <h3 class="sidebar__subtitle">Тип</h3>
         <div class="sidebar__block">

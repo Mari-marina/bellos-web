@@ -44,6 +44,8 @@
   }
   &__pillar:not(:first-child) {
     @include text(14px, 400, 14px, $blackColor);
+    font-weight: 500;
+    // font-family: 'Bebas Neue';
     // text-align: center;
   }
   &__pillar:first-child {

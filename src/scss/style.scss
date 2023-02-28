@@ -10,6 +10,10 @@
 
 // Подключение переменных =======================================================================================================================
 @import 'config/vars';
+@import 'libs/range';
+@import 'layout/range';
+
+
 
 // Обнуление =======================================================================================================================
 @import 'config/reset';
@@ -56,6 +60,7 @@
 @import 'layout/catalog/data.scss';
 @import 'config/svg';
 @import 'layout/catalog/only-mobile';
+@import 'layout/range';
 
 
 @import 'layout/footer';

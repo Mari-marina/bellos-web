@@ -23,6 +23,9 @@ border-radius: 15px;
   &__wrapper {
     overflow-x: scroll;
     display: flex;
+    &::-webkit-scrollbar {
+      height: 8px;
+    }
   }
   &__block {
     margin-top: 80px;
@@ -94,3 +97,4 @@ border-radius: 15px;
     }
   }
 }
+
