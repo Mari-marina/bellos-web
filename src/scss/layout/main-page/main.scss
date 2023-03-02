@@ -37,7 +37,6 @@
     align-items: center;
     padding: 20px 8px 20px 44px;
     justify-content: space-between;
-    cursor: pointer;
     @media all and (max-width: 500px) {
       @include text(20px, 400, 23px, $blackColor);
       height: 60px;
@@ -71,10 +70,15 @@
     }
     
   }
+  &__subtitle-black {
+    color: $blackColor;
+  }
   &__block {
-    display: none;
+    color: $blackColor;
+    display: flex;
+    justify-content: space-between;
     @media all and (max-width: 940px)  {
-      display: flex;
+      align-items: center;
       flex-wrap: wrap;
       justify-content: center;
       margin-top: 20px;

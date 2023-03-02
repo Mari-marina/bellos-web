@@ -264,7 +264,7 @@ padding: 20px;
       display: flex;
     }
     &__wrapper {
-      @include text(12px, 400, 14px, $blackColor); 
+      @include text(14px, 400, 14px, $blackColor); 
       margin: 8px 0 6px;
     }
     &__wrapper:first-child {
@@ -297,7 +297,7 @@ padding: 20px;
       @include text(14px, 600, 17px, $blackColor);
     }
     &__text-color:first-child {
-      @include text(12px, 400, 14px, #00BEA4);
+      @include text(14px, 400, 14px, #00BEA4);
     }
     &__text-color:last-child {
       @include text(18px, 400, 22px, #00BEA4);
@@ -314,7 +314,8 @@ padding: 20px;
     }
     &__input {
       width: 26px;
-      padding-left: 4px;
+      padding-left: 1px;
+      text-align: center;
     }
     &__block {
       align-items: center;
@@ -335,3 +336,4 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
  
+

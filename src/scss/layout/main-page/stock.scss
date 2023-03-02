@@ -53,6 +53,15 @@ border-radius: 15px;
       justify-content: flex-start;
     }
 }
+&__item {
+  display: flex;
+  align-items: center
+}
+&__item:last-child {
+  @media all and (max-width: 550px) {
+    width: 168px;
+  }
+}
   &__item,
   &__item > a {
     @include text(26px, 400, 39px, $whiteColor);

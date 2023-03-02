@@ -56,7 +56,8 @@
   }
   &__button:hover,
   &__button:active,
-  &__button:focus {
+  &__button:focus,
+  &__button:visited {
     background: $blackColor;
     @include text(14px, 400, 22px, $whiteColor);
   }
