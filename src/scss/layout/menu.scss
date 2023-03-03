@@ -122,6 +122,15 @@
       
     }
   }
+  &__item:not(:nth-child(4)) {
+    width: 60px;
+  }
+  &__item:nth-child(4) {
+    @media all and (max-width: 950px) {
+      margin-top: 28px;
+    }
+   
+  }
   
   &__item-right {
     font-size: 14px;
@@ -137,5 +146,7 @@
   }
   
  }
+
+ 
 
  
