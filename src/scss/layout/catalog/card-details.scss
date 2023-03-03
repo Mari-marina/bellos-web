@@ -86,7 +86,7 @@ padding: 0 40px 0;
     }
     @media all and (max-width: 700px) {
       padding: 0;
-      @include text(12px, 400, 14px, $blackColor);
+      @include text(14px, 400, 16px, $blackColor);
       margin-top: 10px;
     }
     
@@ -145,6 +145,8 @@ margin-bottom: 40px;
 @media all and (max-width: 700px){
   width: 100%;
   padding: 20px 30px;
+  text-align: left;
+  
 }
   }
   &__cards {
@@ -155,6 +157,10 @@ margin-bottom: 40px;
   &__cards__block {
     margin-right: 40px;
     width: 100%;
+    @media all and (max-width: 450px) {
+      margin-right: 10px;
+      
+    }
     
   }
   &__wrap-bottom {

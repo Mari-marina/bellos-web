@@ -62,12 +62,17 @@
     
   }
   &__slider__img {
+    max-width: 660px;
     @media all and (max-width: 740px)  {
       max-width: 660px;
       width: 100%;
     }
-      
+     
   }
+  &__slider__wrap {
+    max-width: 660px;
+    width: 100%;
+  } 
   &__wrap {
     display: flex;
     justify-content: space-between;

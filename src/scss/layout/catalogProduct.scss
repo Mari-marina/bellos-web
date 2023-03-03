@@ -20,10 +20,10 @@
   &__subtitle {
     @include text(16px, 400, 19px, $blackColor);
     @media all and (max-width: 816px) {
-      @include text(14px, 400, 18px, $blackColor);
+      @include text(16px, 400, 18px, $blackColor);
     }
     @media all and (max-width: 600px) {
-      @include text(10px, 400, 12px, $blackColor);
+      @include text(16px, 400, 17px, $blackColor);
     }
   }
   &__subtitle-left {
@@ -70,7 +70,7 @@
       @include text(14px, 400, 18px, $blackColor);
     }
     @media all and (max-width: 600px) {
-      @include text(10px, 400, 12px, $blackColor);
+      @include text(13px, 400, 12px, $blackColor);
     }
   }
   &__text:last-child {
@@ -80,7 +80,7 @@
       @include text(14px, 400, 18px, $blackColor);
     }
     @media all and (max-width: 600px) {
-      @include text(10px, 400, 12px, $blackColor);
+      @include text(13px, 400, 12px, $blackColor);
     }
   }
   
@@ -100,8 +100,8 @@
     }
     @media all and (max-width: 700px) {
       padding: 9px 14px;
-      max-width: 105px;
-      @include text(10px, 400, 11px, $whiteColor);
+      max-width: 117px;
+      @include text(12px, 400, 11px, $whiteColor);
       border-radius: 7.5px;
     }
     

@@ -219,6 +219,17 @@ padding: 20px;
     justify-content: space-between;
     align-items: center
   }
+  &__button-gray{
+    cursor: pointer;
+    max-width: 340px;
+    width: 100%;
+    background: #939393;
+    padding: 10px 10px 10px 44px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+  }
   &__button__text {
     @include text(20px, 400, 23px, $whiteColor);
     font-family: 'Buran USSR';
@@ -336,4 +347,18 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
  
+.order__mobile__details {
+  background: #ffffff;
+  margin-bottom: 20px;
+}
+.catalog__text__order {
+  font-size: 20px;
+}
 
+details > details[open] img {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg)}
+
+  details summary::-webkit-details-marker {
+    display:none;
+  }  
