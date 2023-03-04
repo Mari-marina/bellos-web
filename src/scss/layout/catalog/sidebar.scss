@@ -6,7 +6,10 @@
   margin: 20px;
   height: 100%;
   @media all and (max-width: 1154px) {
-    display: none;
+    width: auto;
+  }
+  @media all and (max-width: 500px) {
+   display: none;
   }
   &__range__block {
     display: flex;
