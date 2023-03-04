@@ -1,85 +1,49 @@
-<style>
-  html,
-  body {
-    position: relative;
-    height: 100%;
-  }
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img class="swiper-img" src="./../../images/slider-about/hand.png" alt=""></div>
+    <div class="swiper-slide"><img class="swiper-img" src="./../../images/slider-about/watch.png" alt=""></div>
+    <div class="swiper-slide"><img class="swiper-img" src="./../../images/slider-about/hand.png" alt=""></div>
+    <div class="swiper-slide"><img class="swiper-img" src="./../../images/slider-about/watch.png" alt=""></div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
 
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-  }
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
 
-  swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-
-  swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-</style>
-<swiper-container class="swiper-container" pagination="true">
-  <swiper-slide>Slide 1</swiper-slide>
-  <swiper-slide>Slide 2</swiper-slide>
-  <swiper-slide>Slide 3</swiper-slide>
-  <swiper-slide>Slide 4</swiper-slide>
-  <swiper-slide>Slide 5</swiper-slide>
-  <swiper-slide>Slide 6</swiper-slide>
-  <swiper-slide>Slide 7</swiper-slide>
-  <swiper-slide>Slide 8</swiper-slide>
-  <swiper-slide>Slide 9</swiper-slide>
-</swiper-container>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-
-<script>
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
   
-  var swiper = new Swiper('.swiper-container', {
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  slidesPerView: 2,
   loop: true,
-  spaceBetween: 20,
 
-
+  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
+
+  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
+  // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
   },
-  breakpoints: {
-      310: {
-          slidesPerView: 1,
-      },
-      640: {
-          slidesPerView: 2,
-      },
-      768: {
-          slidesPerView: 3,
-      },
-  },
-  autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-  },
-} );
+});
 </script>
