@@ -9,10 +9,13 @@
     padding: 0 5px 10px;
     display: flex;
     align-items: center;
-    margin-top: 16px;
+    margin-top: 36px;
     justify-content: center;
 
     // border-bottom: 1px solid $blackColor;
+  }
+  &__row {
+    border-bottom: 1px solid #D9D9D9;
   }
   &__text {
     width: max-content;
@@ -25,6 +28,9 @@
     padding: 16px 20px;
     color: $whiteColor;
     font-family: 'Buran USSR';
+    margin: 20px 0;
+    max-height: 50px;
+    height: 100%;
   }
   &__wrapper {
     background: $whiteColor;
@@ -59,10 +65,15 @@
     width: 100%;
     padding: 10px 48px;
   }
+  &__line-color {
+    border: 1px solid #E4E4E4;
+    padding: 5px;
+  }
   &__pillar {
     margin-bottom: 1px solid #D9D9D9;
-    padding: 23px 0;
+    padding: 12px 0;
   }
+  
   &__column-top:first-child {
     width: 13%;
   }
@@ -78,5 +89,14 @@
   &__text {
     padding-bottom: 10px 10px 10px;
     border-bottom: 1px solid $blackColor;
+  }
+  &__pillar-gray {
+    color: #696969 !important;
+  }
+  &__wrap__tbl {
+    padding: 20px;
+  }
+  &__text-first {
+    margin-left: 10px;
   }
 }
